@@ -1,0 +1,51 @@
+*** Probes ***
+
++ FPing
+
+binary = /usr/bin/fping
+pings = 20
+step = 30
+timeout = 5
+
+++ FPingSmall
+offset = 0%
+packetsize = 100
+
+++ FPingLarge
+packetsize = 1200
+offset = 50%
+
++FPing6
+
+binary = /usr/bin/fping6 # mandatory
+offset = 50%
+pings = 20
+step = 30
+timeout = 5
+
+++ FPingSmall6
+offset = 0%
+packetsize = 100
+
+++ FPingLarge6
+packetsize = 1200
+offset = 50%
+
++DNS
+
+binary = /usr/bin/dig # mandatory
+forks = 5
+offset = 50%
+step = 30
+timeout = 15
+pings = 5
+
+
++AnotherDNS
+
+forks = 5
+offset = 50%
+step = 30
+timeout = 15
+pings = 5
+recordtype = AAAA

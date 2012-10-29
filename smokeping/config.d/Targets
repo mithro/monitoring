@@ -1,0 +1,166 @@
+*** Targets ***
+
+probe = FPingSmall
+
+menu = Top
+title = Network Latency Grapher
+
+
++ Local
+menu = Local
+title = Local Network
+
+++ LocalMachine
+
+menu = Local Machine
+title = This host
+host = localhost
+
+
+
++ HouseIPv4-Small
+probe = FPingSmall
+menu = Houses IPv4 (Small)
+title = Network latency (ICMP pings)
+
+++ 38Arlington
+host = 38arlington.no-ip.info
+
+++ Monarto
+host = monarto.no-ip.info
+
+++ 709Pyrmont
+host = 709pyrmont.no-ip.info
+
+
+
++ HouseIPv4-Large
+probe = FPingLarge
+menu = Houses IPv4 (Large)
+title = Network latency (ICMP pings)
+
+++ 38Arlington
+host = 38arlington.no-ip.info
+
+++ Monarto
+host = monarto.no-ip.info
+
+++ 709Pyrmont
+host = 709pyrmont.no-ip.info
+
+
+
++ InternalIPv4
+probe = FPingSmall
+menu = Internal Latency IPv4
+title = Network latency (ICMP pings)
+
+++ gerty_mithis_com
+host = gerty.mithis.com
+
+++ hopper_mithis_com
+host = hopper.mithis.com
+
+++ storage_mithis_com
+host = storage.mithis.com
+
+++ roger_mithis_com
+host = roger.mithis.com
+
+++ ns1_mithis_com
+host = ns1.mithis.com
+
+
+
++ ExternalIPv4
+probe = FPingSmall
+menu = External latency IPv4
+title = Network latency (ICMP pings)
+
+++ Google
+host = www.google.com
+
+++ www_internode_on_net
+host = www.internode.on.net
+
+++ ns1_rollernet_us
+host = ns1.rollernet.us
+
+++ ns2_rollernet_us
+host = ns2.rollernet.us
+
+
+
++ InternalIPv6
+probe = FPingSmall6
+menu = Internal Latency IPv6
+title = Network latency (ICMP6 pings)
+
+++ roger_mithis_com
+host = roger.mithis.com
+
+++ hopper_mithis_com
+host = hopper.mithis.com
+
+++ gerty_mithis_com
+host = gerty.mithis.com
+
+++ storage_mithis_com
+host = storage.mithis.com
+
+++ ns1_mithis_com
+host = ns1.mithis.com
+
+++ qnap_mithis_com
+host = qnap.mithis.com
+
+
+
++ ExternalIPv6
+probe = FPingSmall6
+menu = External latency IPv6
+title = Network latency (ICMP6 pings)
+
+++ Google
+host = www.google.com
+
+++ www_internode_on_net
+host = www.internode.on.net
+
+++ ns1_rollernet_us
+host = ns1.rollernet.us
+
+++ ns2_rollernet_us
+host = ns2.rollernet.us
+
+
+
++ DNSIPv4
+menu = DNS latency IPv4
+title = Service latency (dig)
+probe = DNS
+
+++ ns1_mithis_com
+host = ns1.mithis.com
+
+++ ns2_mithis_com
+host = ns2.mithis.com
+
+++ ns3_mithis_com
+host = ns3.mithis.com
+
+
+
++ DNSIPv6
+menu = DNS latency IPv6
+title = Service latency (dig)
+probe = AnotherDNS
+
+++ ns1_mithis_com
+host = ns1.mithis.com
+
+++ ns2_mithis_com
+host = ns2.mithis.com
+
+++ ns3_mithis_com
+host = ns3.mithis.com
