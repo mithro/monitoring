@@ -53,7 +53,7 @@ host = 709pyrmont.mithis.com
 
 +++ LocationsHouseIPv6Large
 probe = FPing6Large
-menu = Small
+menu = Large
 title = Network latency (Large ICMP6 pings)
 ++++ 38Arlington
 host = 38arlington.mithis.com
