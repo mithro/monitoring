@@ -1,53 +1,66 @@
 *** Targets ***
 
 probe = FPingSmall
-
 menu = Top
 title = Network Latency Grapher
-
 
 + Local
 menu = Local
 title = Local Network
-
 ++ LocalMachine
-
 menu = Local Machine
 title = This host
 host = localhost
 
 
++ Locations
+menu = Locations
 
-+ HouseIPv4-Small
+++ LocationsIPv4
+menu = IPv4
+
++++ LocationsIPv4Small
+menu = Small
 probe = FPingSmall
-menu = Houses IPv4 (Small)
-title = Network latency (ICMP pings)
+title = Network latency (Small ICMP pings)
+++++ 38Arlington
+host = 38arlington.mithis.com
+++++ 709Pyrmont
+host = 709pyrmont.mithis.com
 
-++ 38Arlington
-host = 38arlington.no-ip.info
-
-++ Monarto
-host = monarto.no-ip.info
-
-++ 709Pyrmont
-host = 709pyrmont.no-ip.info
-
-
-
-+ HouseIPv4-Large
++++ LocationsIPv4Large
 probe = FPingLarge
-menu = Houses IPv4 (Large)
-title = Network latency (ICMP pings)
+menu = Large
+title = Network latency (Large ICMP pings)
+++++ 38Arlington
+host = 38arlington.mithis.com
+++++ 709Pyrmont
+host = 709pyrmont.mithis.com
 
-++ 38Arlington
-host = 38arlington.no-ip.info
+++ LocationsIPv6
+menu = IPv6
 
-++ Monarto
-host = monarto.no-ip.info
++++ LocationsHouseIPv6Small
+probe = FPing6Small
+menu = Small
+title = Network latency (Small ICMP6 pings)
+++++ 38Arlington
+host = 38arlington.mithis.com
+++++ Monarto
+host = monarto.mithis.com
+++++ 709Pyrmont
+host = 709pyrmont.mithis.com
 
-++ 709Pyrmont
-host = 709pyrmont.no-ip.info
-
++++ LocationsHouseIPv6Large
+probe = FPing6Large
+menu = Small
+title = Network latency (Large ICMP6 pings)
+++++ 38Arlington
+host = 38arlington.mithis.com
+++++ Monarto
+host = monarto.mithis.com
+++++ 709Pyrmont
+host = 709pyrmont.mithis.com
 
 
 + InternalIPv4
@@ -57,19 +70,14 @@ title = Network latency (ICMP pings)
 
 ++ gerty_mithis_com
 host = gerty.mithis.com
-
 ++ hopper_mithis_com
 host = hopper.mithis.com
-
 ++ storage_mithis_com
 host = storage.mithis.com
-
 ++ roger_mithis_com
 host = roger.mithis.com
-
 ++ ns1_mithis_com
 host = ns1.mithis.com
-
 
 
 + ExternalIPv4
@@ -79,60 +87,47 @@ title = Network latency (ICMP pings)
 
 ++ Google
 host = www.google.com
-
 ++ www_internode_on_net
 host = www.internode.on.net
-
 ++ ns1_rollernet_us
 host = ns1.rollernet.us
-
 ++ ns2_rollernet_us
 host = ns2.rollernet.us
 
 
-
 + InternalIPv6
-probe = FPingSmall6
+probe = FPing6Small
 menu = Internal Latency IPv6
 title = Network latency (ICMP6 pings)
 
 ++ roger_mithis_com
 host = roger.mithis.com
-
 ++ hopper_mithis_com
 host = hopper.mithis.com
-
 ++ gerty_mithis_com
 host = gerty.mithis.com
-
 ++ storage_mithis_com
 host = storage.mithis.com
-
 ++ ns1_mithis_com
 host = ns1.mithis.com
-
 ++ qnap_mithis_com
 host = qnap.mithis.com
 
 
 
 + ExternalIPv6
-probe = FPingSmall6
+probe = FPing6Small
 menu = External latency IPv6
 title = Network latency (ICMP6 pings)
 
 ++ Google
 host = www.google.com
-
 ++ www_internode_on_net
 host = www.internode.on.net
-
 ++ ns1_rollernet_us
 host = ns1.rollernet.us
-
 ++ ns2_rollernet_us
 host = ns2.rollernet.us
-
 
 
 + DNSIPv4
@@ -142,10 +137,8 @@ probe = DNS
 
 ++ ns1_mithis_com
 host = ns1.mithis.com
-
 ++ ns2_mithis_com
 host = ns2.mithis.com
-
 ++ ns3_mithis_com
 host = ns3.mithis.com
 
@@ -158,9 +151,7 @@ probe = AnotherDNS
 
 ++ ns1_mithis_com
 host = ns1.mithis.com
-
 ++ ns2_mithis_com
 host = ns2.mithis.com
-
 ++ ns3_mithis_com
 host = ns3.mithis.com

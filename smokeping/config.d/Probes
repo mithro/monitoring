@@ -23,11 +23,11 @@ pings = 20
 step = 30
 timeout = 5
 
-++ FPingSmall6
+++ FPing6Small
 offset = 0%
 packetsize = 100
 
-++ FPingLarge6
+++ FPing6Large
 packetsize = 1200
 offset = 50%
 
